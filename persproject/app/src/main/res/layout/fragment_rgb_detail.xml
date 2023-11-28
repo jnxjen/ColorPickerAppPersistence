@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Name: Jenny Vu
+CWID:  884427030
+Email: jvu00@csu.fullerton.edu
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">    <!-- !! CHANGE-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/redSwitch"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R" />
+
+        <EditText
+            android:id="@+id/redVal"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Min:0.0  Max:1.0"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/redseekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:min="0"
+        android:max="100"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/greenSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="G" />
+        <EditText
+            android:id="@+id/greenVal"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Min:0.0  Max:1.0"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/greenseekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:min="0"
+        android:max="100"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/blueSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="B" />
+        <EditText
+            android:id="@+id/blueVal"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Min:0.0  Max:1.0"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/blueseekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:min="0"
+        android:max="100"/>
+
+<!-- <Button
+        android:id="@+id/UpdateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Color" /> -->
+
+    <Button
+        android:id="@+id/ResetButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset All" />
+
+
+</LinearLayout>
